@@ -1,0 +1,58 @@
+package faturamento;
+import java.util.Scanner;
+
+public class Final {
+    private int codigo; //Codigo
+    private String descricao; //descrição
+    private double valorunitario; //valor unitario
+    private double quantidade_venendas; //quantidade vendida
+    private double total_vendas; //total de vendas
+    
+    public Final (int c, String d, double vu ,double qtv, double tv){
+        codigo = c;
+        descricao = d;
+        valorunitario = vu;
+        quantidade_venendas = qtv;
+        total_vendas = tv;
+    }
+    
+    //Valor unitario
+    public void setvalorunitario(double vu){
+        valorunitario = vu;
+    }
+    public double getvalorunitario(){
+       return valorunitario;
+    }
+    
+    //Codigo
+    public void setcodigo(int c){
+        codigo = c;
+    }
+    public int getcodigo(){
+        return codigo;
+    }
+    
+    //Descrição
+    
+    public void setdescricao(String d){
+        descricao = d;
+    }
+    public String getdescricao(){
+        return descricao;
+    }
+    
+    //Quantidade de vendas
+    public void setquantidade_venendas(double qtv){
+        quantidade_venendas = qtv;
+    }
+    public double getquantidade_venendas(){
+        return quantidade_venendas;
+    }
+    
+    //Total de vendas
+    public double gettotal_vendas(){
+        return total_vendas;
+    }
+    
+    
+}
